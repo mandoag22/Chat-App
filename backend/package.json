@@ -2,6 +2,7 @@
   "name": "chat-app-backend",
   "version": "1.0.0",
   "description": "Backend for MERN chat application",
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
