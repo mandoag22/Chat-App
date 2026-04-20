@@ -9,8 +9,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "*"
-  }
+  "description": ""
 }
