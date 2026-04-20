@@ -1,27 +1,38 @@
 {
-  "name": "backend",
+  "name": "chat-app-backend",
   "version": "1.0.0",
+  "description": "Backend for MERN chat application",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "NODE_ENV=production node src/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "mern",
+    "chat",
+    "socket.io"
+  ],
   "author": "",
-  "type": "module",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "cloudinary": "^2.9.0",
-    "cookie-parser": "^1.4.7",
-    "dotenv": "^17.4.0",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.3.3",
-    "socket.io": "^4.8.3"
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^4.8.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.1.7",
+    "morgan": "^1.10.0",
+    "helmet": "^8.1.0"
   }
 }
